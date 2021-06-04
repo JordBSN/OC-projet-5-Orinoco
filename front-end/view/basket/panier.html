@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://kit.fontawesome.com/7d17636476.js"></script>
+  
+  <title>Panier</title>
+</head>
+
+<body>
+  </head>
+
+  <body>
+    <!-- Start HEADER -->
+    <header>
+      <!-- logo -->
+      <section class="logo">
+        <a href="../home/index.html"><img class="logo-img" src="../../assets/img/logo.png" alt="logo-site" /></a>
+      </section>
+      <!-- panier -->
+      <section>
+        <div class="basket">
+          <a href="../basket/panier.html">Panier</a>
+        </div>
+
+      </section>
+    </header>
+    <!-- End HEADER -->
+
+    <!-- Start MAIN -->
+    <main>
+
+      <!-- ORDER SUMMARY -->
+      <section class="order-summary">
+        <h2 class="order-summary__title">Votre panier</h2>
+        <table class="order-summary__table">
+          <thead>
+            <tr>
+              <th id="product">Produit</th>
+              <th id="quantity">Quantité</th>
+              <th id="price">Prix</th>
+              <th id="total">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="productName"></td>
+              <td id="quantityProduct">
+                <select quantity-productid="quantityProductSelect" name="quantity" id="quantity">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+                </form>
+              </td>
+              <td id="priceProduct"></td>
+              <td id="totalPriceProduct"></td>
+            </tr>
+            <tr>
+              <td id="allTotalPriceProduct"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ORDER PURCHASE -->
+      <section class="order-purchase">
+        <h2 class="order-purchase__title">Passer commande</h2>
+
+        <form action="" class="order-purchase__form">
+          <!-- FIRSTNAME -->
+          <label for="firstname">Prénom</label>
+          <input type="text" name="firstname" id="firstname" class="input" required>
+
+          <!-- LASTNAME -->
+          <label for="lastname" class="label">Nom</label>
+          <input type="text" name="lastname" id="lastname" class="label" required>
+
+          <!-- EMAIL -->
+          <label for="email" class="label">Adresse e-mail</label>
+          <input type="email" name="email" id="email" class="input" required>
+
+          <!-- ADRESS -->
+          <label for="adress" class="label">Adresse</label>
+          <input type="text" name="adress" id="adress" class="input" required>
+
+          <!-- ZIPCODE -->
+          <label for="zipcode" class="label">Code postal</label>
+          <input type="text" name="zipcode" id="zipcode" class="input" required />
+
+          <!-- CITY -->
+          <label for="city" class="label">Ville</label>
+          <input type="text" name="city" id="city" class="input" required />
+
+          <!-- MEANS OF PAYMENT -->
+          <label for="meansPayment">Choix du moyen de paiement </label>
+          <input type="radio" class="paiement" name="identifieur" value="Visa" checked /><i class="fab fa-cc-visa fa-2x"></i> 
+          <input type="radio" class="paiement" name="identifieur" value="Mastercard"/><i class="fab fa-cc-mastercard fa-2x"></i>
+          <input type="radio" class="paiement"name="identifieur" value="Paypal"/><i class="fab fa-cc-paypal fa-2x"></i>
+
+          <!-- SUBMIT -->
+          <button id="commander" type="submit" name="commander">Commander</button>
+          </form>
+      </section>
+    </main>
+    <!-- End HEADER -->
+
+    <!-- Start FOOTER -->
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__list__element">ELEMENT FOOTER</li>
+      </ul>
+    </footer>
+    <!-- End FOOTER -->
+  </body>
+
+</html>
